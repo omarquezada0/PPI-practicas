@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi tienda</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mi tienda en linea</h1>
+      <nav>
+        <a>Contacto</a>
+        <a>Producto</a>
+        <a>Tabla</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Formulario de registro</h2>
+        <form>
+          <fieldset>
+            <legend>Datos personales</legend>
+            <label for="Nombre">Primer nombre</label>
+            <input
+              type="text"
+              id="Nombre"
+              name="fname"
+              placeholder="Primer nombre"
+            />
+            <br /><br />
+            <label for="Apellido">Primer apellido</label>
+            <input
+              type="text"
+              id="Apellido"
+              name="lname"
+              placeholder="Primer apellido"
+            />
+            <br /><br />
+            <label for="Edad">Edad</label>
+            <input type="number" id="Edad" name="age" placeholder="00" />
+            <br /><br />
+            <label for="Correo">E-mail</label>
+            <input
+              type="email"
+              id="Correo"
+              name="email"
+              placeholder="ejemplo@gmial.com"
+            />
+            <br /><br />
+            <label for="Contraseña">Contraseña</label>
+            <input
+              type="password"
+              id="Contraseña"
+              name="password"
+              placeholder="*************"
+            />
+          </fieldset>
+        </form>
+        <h2>Busqueda de youtube</h2>
+        <form action="https://www.youtube.com/results">
+          <fieldset>
+            <legend>Busqueda</legend>
+            <label for="Busqueda">Buscar</label>
+            <input
+              type="text"
+              id="Busqueda"
+              name="search_query"
+              placeholder="Busca algo"
+            />
+            <button>Buscar</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
