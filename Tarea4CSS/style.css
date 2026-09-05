@@ -1,3 +1,4 @@
+/* Omar Alejandro Quezada Rodríguez */
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,7 +17,7 @@ h1{
 
 .oferta-destacada{
     background-color: rgba(211, 77, 59, 0.45);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 ul{
@@ -65,4 +66,26 @@ button:nth-of-type(3){
     color: wheat;
 
 }
+input[type="radio"]:checked{
+    accent-color: goldenrod;
+}
 
+input[type="radio"]:checked+label{
+    color: goldenrod;
+
+}
+
+p:hover::before{
+    content: "Inicio->";
+}
+
+p:hover::after{
+    content: "<-Fin";
+    background-color: black;
+    color: white;
+}
+
+input:focus{
+    color: yellow;
+    background-color: darkorange;
+}
