@@ -8,15 +8,54 @@
   <body>
     <header>
       <h1>Mi tienda en linea</h1>
+      <h3>Omar Alejandro Quezada Rodríguez</h3>
       <nav>
-        <a>Contacto</a>
+        <a href="#form_cont">Contacto</a>
         <a>Producto</a>
-        <a>Tabla</a>
+        <a href="#tabla">Tabla</a>
       </nav>
     </header>
     <main>
       <section>
-        <h2>Formulario de registro</h2>
+        <h2 id="tabla">Tabla</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th rowspan="2">Categoría</th>
+              <th colspan="2">Producto</th>
+            </tr>
+            <tr>
+              <th>Nombre</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">Frutas</td>
+              <td>Mango</td>
+              <td>$20.00</td>4
+            <tr>
+              <td>Platano</td>
+              <td>$15.00</td>
+            </tr>
+            </tr>
+            <tr>
+              <td rowspan="2">Verduras</td>
+              <td>Zanahoria</td>
+              <td>$10.00</td>
+            </tr>
+            <tr>
+              <td>Lechuga</td>
+              <td>$25.00</td>
+            </tr>
+            <tr>
+              
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2 id="form_cont">Formulario de registro</h2>
         <form>
           <fieldset>
             <legend>Datos personales</legend>
@@ -55,7 +94,61 @@
               placeholder="*************"
             />
           </fieldset>
+          <br />
+          <fieldset>
+            <legend>Preferencias</legend>
+            <p>Notificarme de:</p>
+            <label for="notif_ofertas">ofertas</label>
+            <input
+              type="checkbox"
+              id="notif_ofertas"
+              name="notificaciones"
+              value="ofertas"
+            />
+            <label for="notif_nov">Novedades</label>
+            <input
+              type="checkbox"
+              id="notif_nov"
+              name="notificaciones"
+              value="novedades"
+            />
+            <p>Método de envío</p>
+            <input
+              type="radio"
+              id="envio_estandar"
+              name="m_envio"
+              value="estandar"
+            />
+            <label for="envio_estandar">Estandar</label>
+            <input
+              type="radio"
+              id="envio_express"
+              name="m_envio"
+              value="express"
+            />
+            <label for="envio_express">Express</label>
+            <input
+              type="radio"
+              id="recoger_tienda"
+              name="m_envio"
+              value="recoger"
+            />
+            <label for="recoger_tienda">Recoger en tienda</label>
+            <br />
+            <label for="presupuesto">Presupuesto</label>
+            <input
+              type="range"
+              id="presupuesto"
+              name="presupuesto"
+              min="0"
+              max="500"
+              step="100"
+            />
+            <br /><br /><button type="submit">Enviar</button>
+            <br /><br /><button>Enviar</button>
+          </fieldset>
         </form>
+        <br /><br />
         <h2>Busqueda de youtube</h2>
         <form action="https://www.youtube.com/results">
           <fieldset>

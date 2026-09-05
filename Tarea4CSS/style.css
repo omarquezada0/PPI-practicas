@@ -1,0 +1,68 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-decoration: dotted red overline underline;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: rgb(184, 38, 27);
+}
+
+#ofertas {
+    background-color: rgba(248, 149, 0, 0.267);
+}
+
+.oferta-destacada{
+    background-color: rgba(211, 77, 59, 0.45);
+    font-weight: 600;
+}
+
+ul{
+    background-color: rgba(211, 182, 17, 0.226);
+    font-weight: normal;
+}
+
+ol{
+    background-color: rgba(15, 115, 245, 0.342);
+
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+a[href^="#detalle"]{
+    color: rgb(184, 27, 137);
+}
+
+#combos li > a{
+    background-color: rgba(189, 21, 21, 0.568);
+}
+
+#combos span ~ a{
+    background-color: rgba(184, 27, 163, 0.596);
+}
+#combos span + a{
+    background-color: rgba(127, 255, 212, 0.589);
+}
+
+#carrito-agregar:hover{
+    background-color: burlywood;
+    color: brown;
+}
+
+#carrito-comprar:active{
+    background-color: chocolate;
+    color: darkred;
+}
+
+button:nth-of-type(3){
+    background-color: black;
+    color: wheat;
+
+}
+
